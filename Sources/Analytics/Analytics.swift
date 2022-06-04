@@ -3,4 +3,8 @@ public struct Analytics {
 
     public init() {
     }
+    
+    public func getDeviceInfo() {
+        TrackDevice().trackCurrentDevice()
+    }
 }
