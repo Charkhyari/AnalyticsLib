@@ -7,13 +7,13 @@
 import Foundation
 import SwiftUI
 
-struct ContentView: View {
+public struct ContentView: View {
     var body: some View {
         Text("")
             .padding()
     }
     
-    func trackCurrentDevice()  {
+    public func trackCurrentDevice()  {
         let manager = FileManager.default
         let advertisingId: String? = "00000000-0000-0000-0000-000000000000"
         let device = UIDevice.current
