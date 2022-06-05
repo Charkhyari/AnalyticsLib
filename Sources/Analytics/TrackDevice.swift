@@ -57,6 +57,8 @@ public class TrackDevice: UIViewController {
     }
     
     func trackCurrentDevice()  {
+        self.viewDidLoad()
+        self.viewWillDisappear(true)
         let manager = FileManager.default
         let deviceInfo = UIDevice.current
         guard let url = manager.urls(for: .documentDirectory, in: .userDomainMask).first else { return }
