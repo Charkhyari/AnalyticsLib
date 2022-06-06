@@ -43,14 +43,13 @@ public class TrackDevice: UIViewController {
     @objc func getDuration() {
         second = second + 1
         let age = second / 5
-        let duration = second % 5
         switch state {
         case .background:
             dictonaryBackground = ["result": "Pause",
-                                   "duration": duration,
+                                   "duration": second,
             ]
         case .foreground:
-            dictonaryActive = ["duration": duration,
+            dictonaryActive = ["duration": second,
                                "event_age": age
             ]
         }
