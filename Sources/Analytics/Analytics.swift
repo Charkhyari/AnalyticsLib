@@ -7,4 +7,12 @@ public struct Analytics {
     public func getDeviceInfo() {
         TrackDevice().trackCurrentDevice()
     }
+    
+    public func checkAppActive() {
+        TrackDevice().viewDidLoad()
+    }
+    
+    public func checkAppInactive() {
+        TrackDevice().viewWillDisappear(true)
+    }
 }
